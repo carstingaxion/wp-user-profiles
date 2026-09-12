@@ -11,8 +11,8 @@
  * Text Domain:       wp-user-profiles
  * Domain Path:       /wp-user-profiles/includes/languages
  * Requires at least: 5.2
- * Requires PHP:      7.2
- * Tested up to:      6.6
+ * Requires PHP:      7.4
+ * Tested up to:      7.1
  * Version:           2.6.2
  */
 
