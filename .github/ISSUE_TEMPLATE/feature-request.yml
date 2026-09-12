@@ -1,0 +1,39 @@
+name: Feature request
+description: Propose a focused improvement to WP User Profiles.
+title: "Enhancement: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem should this solve?
+      description: Describe the user-facing need before proposing an implementation.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: Describe the observable behavior and compatibility expectations.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Affected area
+      options:
+        - Profile sections or navigation
+        - Profile fields or meta-boxes
+        - Roles, capabilities, or status
+        - Multisite Sites section
+        - Third-party plugin integration
+        - Developer API
+        - Multiple areas
+        - Unsure
+    validations:
+      required: true

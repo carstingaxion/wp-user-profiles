@@ -1,0 +1,73 @@
+name: Bug report
+description: Report a reproducible problem in WP User Profiles.
+title: "Bug: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: Report security vulnerabilities privately through GitHub Security Advisories.
+  - type: textarea
+    id: behavior
+    attributes:
+      label: What happened?
+      description: Describe the observed behavior and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Provide the smallest reliable sequence that demonstrates the problem.
+    validations:
+      required: true
+  - type: input
+    id: plugin-version
+    attributes:
+      label: WP User Profiles version
+    validations:
+      required: true
+  - type: input
+    id: wordpress-version
+    attributes:
+      label: WordPress version
+    validations:
+      required: true
+  - type: input
+    id: php-version
+    attributes:
+      label: PHP version
+    validations:
+      required: true
+  - type: dropdown
+    id: screen
+    attributes:
+      label: Affected profile screen
+      options:
+        - Your Profile
+        - Edit User
+        - Network Admin user profile
+        - User Admin profile
+        - Multiple profile screens
+    validations:
+      required: true
+  - type: dropdown
+    id: section
+    attributes:
+      label: Affected section
+      options:
+        - Profile
+        - Account
+        - Options
+        - Permissions
+        - Sites
+        - Other or third-party section
+        - Multiple sections
+        - Unsure
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Include active profile-related plugins and sanitized logs. Never include credentials or personal data.
